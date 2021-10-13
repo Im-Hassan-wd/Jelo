@@ -17,6 +17,14 @@ timeline
         .setPin('.page')
         .addTo(controller)
 
-let tl = new TimelineMax();
+// let tl = new TimelineMax();
 
-tl.to(".button", {duration:5, rotation:360})
+// tl.to(".button", {duration:5, rotation:360})
+const button = document.querySelector("button");
+tl1 = gsap.timeline({paused:true, repeat:1, yoyo:true});
+tl1.to("button", {duration:0.3, rotation: 20, ease:Linear.easeNone, transformOrigin:"50% 50%"})
+
+button.addEventListener("click", () => {
+    tl1.play();
+})
+
