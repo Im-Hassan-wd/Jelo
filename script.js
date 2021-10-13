@@ -6,17 +6,17 @@ timeline
     .fromTo('.box-2', {x:300, y: -400 ,rotation: 0}, {x:0, y: 0, rotation:360,}, '-=5')
     .fromTo('.box-3', {x:450, y: 400 ,rotation: 0},{x:0, y: 0, rotation:360,},'-=5')
     .fromTo('.box-4', {x:-450, y: 400 ,rotation: 0},{x:0, y: 0, rotation:360,}, '-=5')
-    .to('.')
+    // .to('.')
 
     let scene = new ScrollMagic.Scene({
-        triggerElement: '.front-cover',
+        triggerElement: '',
         duration: '100%',
         triggerHook: 0,
     })
         .setTween(timeline)
         .setPin('.page')
-        .addTo(controller);
+        .addTo(controller)
 
-let tl1 = gsap.timeline({paused:true, repeat:1, yoyo:true})
+let tl = new TimelineMax();
 
-tl1.to(".button", {duration:5, rotation:360})
+tl.to(".button", {duration:5, rotation:360})
