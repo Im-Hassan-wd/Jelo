@@ -15,4 +15,8 @@ timeline
     })
         .setTween(timeline)
         .setPin('.page')
-        .addTo(controller)
+        .addTo(controller);
+
+let tl1 = gsap.timeline({paused:true, repeat:1, yoyo:true})
+
+tl1.to(".button", {duration:5, rotation:360})
