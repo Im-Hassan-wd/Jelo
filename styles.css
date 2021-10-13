@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans";
+}
+
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 95vh;
+}
+
+.page h1 {
+  font-size: 2rem;
+  margin: 20px 0;
+}
+
+.box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.box-1,
+.box-2,
+.box-3,
+.box-4 {
+  width: 150px;
+}
+
+.page button {
+  width: 100px;
+  padding: 5px 10px;
+  background: #bf93ff;
+  border: none;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.end {
+  text-align: center;
+  margin: 100px 0;
+}
