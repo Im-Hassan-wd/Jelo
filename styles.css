@@ -44,3 +44,9 @@
   text-align: center;
   margin: 100px 0;
 }
+
+@media (max-width: 500px) {
+  .page h1 {
+    font-size: 1.5rem;
+  }
+}
